@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastenauta - Pedido</title>
 </head>
+
 <body>
-    
+    <h1>Pedido del cliente</h1>
+    <form action="./pedido_realizado.html">
+        <div>
+            <label for="nombre_cliente">Nombre del cliente:</label>
+            <input type="text" name="nombre_cliente" id="nombre_cliente">
+            <br>
+            <label for="numero_celular">Celular del cliente:</label>
+            <input type="number" name="numero_celular" id="numero_celular">
+            <br>
+            <label for="correo_cliente">Correo del cliente:</label>
+            <input type="email" name="correo_cliente" id="correo_cliente">
+            <br>
+            <label for="descripcion">Descripcion general del pedido:</label><br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+            <br>
+            <label for="dimension">Tamaño del pastel:</label>
+            <select name="dimension" id="dimension">
+                <option value="chico">Chico</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+                <option value="reactangular">Rectangular Grande</option>
+            </select>
+        </div>
+        <div>
+            <h3>Sabores de pasteles</h3>
+            <p>Puede combinar los sabores que desee, solo tendra que seleccionarlos</p>
+            <table>
+                <tr>
+                    <td>Vainilla -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_vainilla" value="vainilla"></td>
+                </tr>
+                <tr>
+                    <td>Fresa -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_fresa" value="fresa"></td>
+                </tr>
+                <tr>
+                    <td>Chocolate -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_chocolate" value="chocolate"></td>
+                </tr>
+                <tr>
+                    <td>Moka -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_moka" value="moka"></td>
+                </tr>
+                <tr>
+                    <td>Late -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_late" value="late"></td>
+                </tr>
+                <tr>
+                    <td>3 leches -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_leches" value="leches"></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>Adornos para pasteles</h3>
+            <p>Puede combinar los adornos que desee, solo tendra que seleccionarlos</p>
+            <table>
+                <tr>
+                    <td>Vela Numerada -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_vainilla" value="vainilla"></td>
+                </tr>
+                <tr>
+                    <td>Vela Chispas -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_fresa" value="fresa"></td>
+                </tr>
+                <tr>
+                    <td>Velas nornales -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_chocolate" value="chocolate"></td>
+                </tr>
+                <tr>
+                    <td>Letrero "Feliz dia" -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_moka" value="moka"></td>
+                </tr>
+                <tr>
+                    <td>Letrero "Mi graduacion" -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_late" value="late"></td>
+                </tr>
+                <tr>
+                    <td>Muñeco de cera infantil -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_leches" value="leches"></td>
+                </tr>
+                <tr>
+                    <td>Muñeco de cera para boda -> </td>
+                    <td>$14.00</td>
+                    <td><input type="checkbox" name="sabor_pastel" id="sabor_leches" value="leches"></td>
+                </tr>
+            </table>
+        </div>
+        <input type="submit" value="Registrar pedido">
+    </form>
 </body>
+
 </html>

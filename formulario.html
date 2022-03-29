@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastenauta - Pedido</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1>Pedido del cliente</h1>
+    <section class="presentacion">
+        
+    <h1 class="subtitulo">Pedido del cliente</h1>
     <form action="./pedido_realizado.html">
         <div>
             <label for="nombre_cliente">Nombre del cliente:</label>
@@ -33,7 +36,7 @@
             </select>
         </div>
         <div>
-            <h3>Sabores de pasteles</h3>
+            <h3 class="carta-titulo">Sabores de pasteles</h3>
             <p>Puede combinar los sabores que desee, solo tendra que seleccionarlos</p>
             <table>
                 <tr>
@@ -69,7 +72,7 @@
             </table>
         </div>
         <div>
-            <h3>Adornos para pasteles</h3>
+            <h3 class="carta-titulo">Adornos para pasteles</h3>
             <p>Puede combinar los adornos que desee, solo tendra que seleccionarlos</p>
             <table>
                 <tr>
@@ -109,8 +112,9 @@
                 </tr>
             </table>
         </div>
-        <input type="submit" value="Registrar pedido">
+        <input class="boton" type="submit" value="Registrar pedido">
     </form>
+    </section>
     <footer>
         <div>
             <p>Pasteleria <span>PASTENAUTA</span></p>
